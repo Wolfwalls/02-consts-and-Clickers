@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myHeader"></h1>
+    <p id="myPara"></p>
+    <script>
+        let somenum=50;
+        somenum=75; //yup, that's okay.
+
+        //but what is a constant
+        const constantvar = 50; // this number can not be changed
+        const pi = 3.14;
+        const header = document.getElementById("myHeader");
+        header.innerHTML = "I'm a new value";
+        //header is an object with properties
+        //it is a variable that is pointing to header's location in memory.
+        //we can change properties of the constant but we cannot change it's location in memory
+        //50 and 75 are two different locations header is still a consistent location just with different properties
+
+    </script>
+</body>
+</html>
